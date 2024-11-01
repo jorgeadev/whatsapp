@@ -1,2 +1,3 @@
-# whatsapp
-Description for WatsApp Reository
+# Auto Message WhatsApp and Telegram
+
+Description for WatsApp Repository
