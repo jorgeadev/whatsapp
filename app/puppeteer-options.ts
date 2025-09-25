@@ -4,7 +4,7 @@ import path from "node:path";
 
 // const executablePath = findChrome().pop();
 const executablePath = "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe";
-const headless = !config.window;
+const headless = config.window;
 const tmpPath = path.resolve(__dirname, config.dataDir);
 console.log("tmpPath", tmpPath);
 
