@@ -3,7 +3,7 @@ import { config } from "./config";
 import path from "node:path";
 
 // const executablePath = findChrome().pop();
-const executablePath = "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe";
+const executablePath = "C:\\Users\\jorge\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\brave.exe";
 const headless = config.window;
 const tmpPath = path.resolve(__dirname, config.dataDir);
 console.log("tmpPath", tmpPath);
@@ -27,7 +27,7 @@ export const puppeteerOptions = {
 		"--disable-extensions",
 		"--disable-default-apps",
 		"--enable-features=NetworkService",
-		`--window-size=${ config.windowWidth + 100 },${ config.windowHeight + 100 }`,
+		`--window-size=${config.windowWidth + 100},${config.windowHeight + 100}`,
 		"--no-first-run",
 		// "--no-startup-window"
 	],
